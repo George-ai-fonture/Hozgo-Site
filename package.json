@@ -1,0 +1,13 @@
+{
+  "name": "hozgo-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HOZGO funnel site, served by a plain Node server with no packages",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
