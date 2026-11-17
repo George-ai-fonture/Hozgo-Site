@@ -1,3 +1,4 @@
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "@/lib/site";
 /** Client for the app's read-only booking-quote edge function. */
 
 export type QuoteVehicleType = "standard" | "luxury" | "multi_horse" | "emergency";
@@ -47,8 +48,8 @@ export type GuidePriceResult =
 const GENERIC_ERROR = "We could not work out a guide price just now. Try again in a minute.";
 
 export async function fetchGuidePrice(input: GuidePriceInput, signal?: AbortSignal): Promise<GuidePriceResult> {
-  const base = import.meta.env.VITE_SUPABASE_URL;
-  const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+  const base = SUPABASE_URL;
+  const key = SUPABASE_ANON_KEY;
   if (!base || !key) return { ok: false, status: 0, message: GENERIC_ERROR };
 
   const body: GuidePriceInput = {

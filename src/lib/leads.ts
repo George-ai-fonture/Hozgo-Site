@@ -1,3 +1,4 @@
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "@/lib/site";
 import { CONTACT_EMAIL } from "./site";
 
 export type LeadKind = "quote" | "transporter_setup" | "enquiry";
@@ -21,7 +22,7 @@ const TIMEOUT_MS = 15_000;
 function leadEndpoint(): string | null {
   const explicit = import.meta.env.VITE_LEAD_ENDPOINT;
   if (explicit) return explicit;
-  const base = import.meta.env.VITE_SUPABASE_URL;
+  const base = SUPABASE_URL;
   return base ? `${base.replace(/\/$/, "")}/functions/v1/website-lead` : null;
 }
 
@@ -38,7 +39,7 @@ export function compact<T extends Record<string, unknown>>(obj: T): Partial<T> {
 
 export async function submitLead(kind: LeadKind, fields: LeadFields): Promise<LeadResult> {
   const url = leadEndpoint();
-  const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+  const key = SUPABASE_ANON_KEY;
   if (!url) return { ok: false, status: 0, message: LEAD_FAILURE_MESSAGE };
 
   const headers: Record<string, string> = { "Content-Type": "application/json" };
