@@ -11,8 +11,10 @@
 
 @layer base {
   :root {
-    /* Premium monochrome palette */
-    --background: 0 0% 100%;
+    /* Premium monochrome palette.
+       Site-only tweak (13 Nov 2026): a hair off pure white for the page so white cards sit on it,
+       and darker secondary text so body copy reads clearly. Same black/white/gunmetal family as the app. */
+    --background: 0 0% 98.5%;
     --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
@@ -26,12 +28,12 @@
     --primary-foreground: 0 0% 98%;
 
     /* Secondary: Light grey */
-    --secondary: 0 0% 96%;
+    --secondary: 0 0% 95%;
     --secondary-foreground: 0 0% 15%;
 
     /* Muted: Soft grey */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 30%;
 
     /* Accent: Dark gunmetal */
     --accent: 210 6% 20%;
