@@ -21,7 +21,7 @@ export function SiteFooter() {
           <div className="max-w-sm">
             <img src="/brand/logo-white.png" alt="HOZGO" className="h-9 w-auto" />
             <p className="mt-4 text-sm font-medium">HOZGO. Safe. Compliant. Trusted.</p>
-            <p className="mt-4 text-sm text-white/70">
+            <p className="mt-4 text-sm text-white">
               <a href={`mailto:${CONTACT_EMAIL}`} className="underline-offset-4 hover:underline">
                 {CONTACT_EMAIL}
               </a>
@@ -34,7 +34,7 @@ export function SiteFooter() {
             </p>
           </div>
           <div className="flex flex-col gap-6">
-            <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/80">
+            <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white">
               {LINKS.map((l) => (
                 <Link key={l.to} to={l.to} className="underline-offset-4 hover:text-white hover:underline">
                   {l.label}
@@ -44,7 +44,7 @@ export function SiteFooter() {
             <StoreBadges />
           </div>
         </div>
-        <p className="mt-10 border-t border-white/15 pt-6 text-xs text-white/50">
+        <p className="mt-10 border-t border-white/15 pt-6 text-xs text-white">
           © {new Date().getFullYear()} HOZGO. All rights reserved.
         </p>
       </Container>

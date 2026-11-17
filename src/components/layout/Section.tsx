@@ -22,7 +22,7 @@ export function Section({ eyebrow, title, intro, children, className, muted, id 
               <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">{eyebrow}</p>
             )}
             {title && <h2 className="text-3xl sm:text-4xl">{title}</h2>}
-            {intro && <div className="mt-4 text-base text-foreground/90">{intro}</div>}
+            {intro && <div className="mt-4 text-base text-foreground">{intro}</div>}
           </header>
         )}
         {children}

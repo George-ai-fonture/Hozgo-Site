@@ -84,7 +84,7 @@ function Ready({
   const priority = Number(f.highPriorityFee ?? 0);
   const minimum = Number(f.minimumChargeFee ?? 0);
   return (
-    <div className={cn("mt-3", stale && "opacity-60")}>
+    <div className={cn("mt-3", stale && "border-l-4 border-foreground pl-3")}>
       {stale && (
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-md bg-secondary px-3 py-2 text-sm font-medium">
           <span>Out of date, show again</span>

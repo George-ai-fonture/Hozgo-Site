@@ -79,7 +79,7 @@ export default function Home() {
               HORSE TRANSPORT. BOOKED IN THE APP.
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl">Your horse can&rsquo;t check. We do.</h1>
-            <p className="mt-5 max-w-xl text-base text-foreground/90 sm:text-lg">
+            <p className="mt-5 max-w-xl text-base text-foreground sm:text-lg">
               Enter your postcodes and see a guide price in seconds. Your job is offered only to HOZGO Approved transporters,
               and your card is held, not charged, until the day of the trip.
             </p>
