@@ -15,7 +15,7 @@ export function CtaBand({ title, text, children, badges }: CtaBandProps) {
       <Container className="py-16 sm:py-20">
         <div className="max-w-2xl">
           <h2 className="text-3xl sm:text-4xl">{title}</h2>
-          {text && <div className="mt-4 text-base text-gunmetal-200">{text}</div>}
+          {text && <div className="mt-4 text-base text-white">{text}</div>}
           {children && <div className="mt-8 flex flex-wrap items-center gap-3">{children}</div>}
           {badges && <StoreBadges className="mt-8" />}
         </div>

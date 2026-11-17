@@ -103,7 +103,7 @@ export default function Transporters() {
         <ol className="grid max-w-3xl gap-4">
           {STEPS.map((s, i) => (
             <li key={s} className="card-premium flex items-center gap-4 p-4">
-              <span className="text-2xl font-semibold text-gunmetal-300" aria-hidden="true">
+              <span className="text-2xl font-semibold text-foreground" aria-hidden="true">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span>{s}</span>

@@ -60,7 +60,7 @@ export function Steps({ detailed = false }: { detailed?: boolean }) {
     <ol className={detailed ? "space-y-6" : "grid gap-6 sm:grid-cols-2 lg:grid-cols-4"}>
       {STEPS.map((s) => (
         <li key={s.n} className={detailed ? "card-premium flex gap-5 p-6 sm:p-8" : "card-premium p-6"}>
-          <span className="text-3xl font-semibold text-gunmetal-300" aria-hidden="true">
+          <span className="text-3xl font-semibold text-foreground" aria-hidden="true">
             {s.n}
           </span>
           <div className="min-w-0">
