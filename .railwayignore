@@ -3,3 +3,5 @@ CLAUDE.md
 ideal-customer.md
 offer.md
 .claude/
+legacy/
+node_modules/

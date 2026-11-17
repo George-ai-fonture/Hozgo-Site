@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /quote/sent
+
+Sitemap: https://hozgo.uk/sitemap.xml
